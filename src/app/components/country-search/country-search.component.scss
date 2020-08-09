@@ -1,0 +1,54 @@
+.country-container {
+    text-align: center !important;
+    width: 237% !important;
+    position: unset;
+    .country-search-row {
+        margin-bottom: 2% !important;
+        .txt-search {
+            width: 34% !important;
+            height: 30px !important;
+            font-size: 14pt !important;
+            text-align: center !important;
+            padding: 3px !important;
+        }
+        .btn-search {
+            padding: 10px !important;
+            width: 9% !important;
+            font-size: 14pt !important;
+        }
+    }
+    h2 {
+        margin-top: 85px  !important;
+    }
+    .spanClass {
+        font-size: 50pt !important;
+        padding: 2px !important;
+        &.char-1,
+        &.char-8 {
+            color: #4285f4 !important;
+        }
+        &.char-2,
+        &.char-9 {
+            color: #ea4335 !important;
+        }
+        &.char-3,
+        &.char-10 {
+            color: #fbbc05 !important;
+        }
+        &.char-4,
+        &.char-11 {
+            color: #528ff5 !important;
+        }
+        &.char-5,
+        &.char-12 {
+            color: #34a853 !important;
+        }
+        &.char-6,
+        &.char-13 {
+            color: #ea4335 !important;
+        }
+        &.char-7 {
+            color: #59d4bd !important;
+        }
+    }
+}

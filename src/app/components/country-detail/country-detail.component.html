@@ -1,0 +1,57 @@
+<div class="country-container">
+    <div class="country-row">
+        <h2>Country Detail - {{countryName}}</h2>
+        <button class="btn back-btn" (click)="goBackToCountrySearch()">Back</button>
+    </div>
+    <table class="country-table">
+        <thead>
+            <th>Country Detail</th>
+            <th style="width: 75%;">Other Information</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="country-row">
+                        <img alt="{{countryName}} Country Logo" title="{{countryName}} Country Logo"
+                            src="{{countryDetail.flag}}" />
+                    </div>
+                    <div class="divider"></div>
+                    <div class="country-info-row"><label class="label">Country Name : </label>
+                        <span class="value">{{countryDetail.name}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Capital City : </label>
+                        <span class="value">{{countryDetail.capital}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Native Name : </label>
+                        <span class="value">{{countryDetail.nativeName}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Region : </label>
+                        <span class="value">{{countryDetail.region}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Sub Region : </label>
+                        <span class="value">{{countryDetail.subregion}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Time Zone : </label>
+                        <span class="value">{{countryDetail.timezones}}</span></div><br>
+                </td>
+                <td style="width: 75%;vertical-align: initial;">
+                    <div class="country-info-row"><label class="label">Country Alt Names : </label>
+                        <span class="value">{{countryDetail.altSpellings[0]}}, {{countryDetail.altSpellings[1]}}, {{countryDetail.altSpellings[2]}}, {{countryDetail.altSpellings[3]}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Country Currencies : </label>
+                        <span class="value">{{countryDetail.currencies[0].code}}, {{countryDetail.currencies[0].name}}, {{countryDetail.currencies[0].symbol}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Country Borders : </label>
+                        <span class="value">{{countryDetail.borders.join(",")}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Calling Codes : </label>
+                        <span class="value">{{countryDetail.callingCodes[0]}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Population : </label>
+                        <span class="value">{{countryDetail.population}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Area : </label>
+                        <span class="value">{{countryDetail.area}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Longitude : </label>
+                        <span class="value">{{countryDetail.latlng[0]}}</span></div><br>
+                    <div class="country-info-row"><label class="label">Latitude : </label>
+                        <span class="value">{{countryDetail.latlng[1]}}</span></div><br>
+                        <div class="country-info-row"><label class="label">Languages : </label>
+                            <span class="value">{{countryDetail.languages[0].name}}</span></div><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

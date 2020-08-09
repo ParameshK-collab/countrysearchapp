@@ -1,0 +1,23 @@
+<div class="country-container">
+    <h2>
+        <span class="spanClass char-1">C</span>
+        <span class="spanClass char-2">o</span>
+        <span class="spanClass char-3">u</span>
+        <span class="spanClass char-4">n</span>
+        <span class="spanClass char-5">t</span>
+        <span class="spanClass char-6">r</span>
+        <span class="spanClass char-7">y</span>&nbsp;
+        <span class="spanClass char-8">S</span>
+        <span class="spanClass char-9">e</span>
+        <span class="spanClass char-10">a</span>
+        <span class="spanClass char-11">r</span>
+        <span class="spanClass char-12">c</span>
+        <span class="spanClass char-13">h</span>
+    </h2>
+    <div class="country-search-row">
+        <input type="text" class="txt-search" placeholder="Enter the country name" [(ngModel)]="countryName">
+    </div>
+    <div class="country-search-row">
+        <button class="btn btn-search" [disabled]="countryName == ''" (click)="onSearchCountry()">Search</button>
+    </div>
+</div>

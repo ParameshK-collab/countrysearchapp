@@ -1,0 +1,37 @@
+<div class="country-container">
+    <div class="country-row">
+        <h2>Country List</h2>
+        <button class="btn back-btn" (click)="goBackToCountrySearch()">Back</button>
+    </div>
+    <table class="country-table">
+        <thead>
+            <th>Flag</th>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Region</th>
+            <th>Sub-Region</th>
+            <th>Population</th>
+            <th>TimeZone</th>
+            <th>Currencies</th>
+        </thead>
+        <tbody>
+            <tr *ngIf="countryDetail == null">
+                <td colspan="8" class="no-records">No Records Found!</td>
+            </tr>
+            <tr *ngFor="let country of countryDetail">
+                <td class="flag">
+                    <img width="100" alt="Country Logo" src="{{country.flag}}" />
+                </td>
+                <td>
+                    <a [routerLink]="['/country',country.name]">{{country.name}}</a>
+                </td>
+                <td>{{country.capital}}</td>
+                <td>{{country.region}}</td>
+                <td>{{country.subregion}}</td>
+                <td>{{country.population}}</td>
+                <td>{{country.timezones[0]}}</td>
+                <td>{{country.currencies[0].code}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
